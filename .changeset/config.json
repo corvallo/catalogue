@@ -7,14 +7,5 @@
   "access": "public",
   "baseBranch": "master",
   "updateInternalDependencies": "patch",
-  "ignore": [
-    "@catalogue/app",
-    "@catalogue/cli",
-    "@catalogue/core",
-    "@catalogue/indexer-generated",
-    "@catalogue/indexer-vite",
-    "@catalogue/plugin-api",
-    "@catalogue/renderer-react",
-    "@catalogue/example-app"
-  ]
+  "ignore": []
 }
