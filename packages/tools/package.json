@@ -1,6 +1,6 @@
 {
   "name": "@catalogue-lab/catalogue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "repository": {
     "type": "git",
@@ -34,7 +34,10 @@
       "default": "./dist/core.js"
     }
   },
-  "files": ["dist", "app"],
+  "files": [
+    "dist",
+    "app"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
