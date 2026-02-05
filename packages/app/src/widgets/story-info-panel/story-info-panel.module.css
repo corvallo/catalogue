@@ -1,0 +1,43 @@
+.panel {
+  border-left: 1px solid var(--border);
+  background: var(--surface);
+  padding: 20px;
+  color: var(--foreground);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.value {
+  word-break: break-word;
+  color: var(--foreground);
+}
+
+.empty {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .panel {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}

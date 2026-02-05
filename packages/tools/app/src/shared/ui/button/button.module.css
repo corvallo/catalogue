@@ -1,0 +1,27 @@
+.button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.button:hover {
+  background: var(--surface-strong);
+  border-color: var(--border);
+}
+
+.ghost {
+  background: transparent;
+  border-color: transparent;
+}
+
+.ghost:hover {
+  background: var(--surface-strong);
+  border-color: var(--border);
+}
+
+.solid {
+  background: var(--surface);
+}

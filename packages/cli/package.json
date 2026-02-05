@@ -1,0 +1,22 @@
+{
+  "name": "@catalogue/cli",
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "catalogue": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "lint": "echo \"no lint configured\"",
+    "test": "echo \"no tests\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
