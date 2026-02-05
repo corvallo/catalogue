@@ -34,7 +34,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build
+        run: pnpm turbo build --filter=!@catalogue/example-app
 
       - name: Generate changeset
         run: pnpm changeset:auto
