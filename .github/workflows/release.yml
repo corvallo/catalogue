@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -40,7 +40,7 @@ jobs:
         run: pnpm changeset:auto
 
       - name: Version
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
         run: pnpm version
 
 
@@ -55,8 +55,8 @@ jobs:
       - name: Verify publish
         run: pnpm verify:publish
 
-      - name: Publish (main)
-        if: github.ref == 'refs/heads/main'
+      - name: Publish (master)
+        if: github.ref == 'refs/heads/master'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm publish

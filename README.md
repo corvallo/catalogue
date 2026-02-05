@@ -111,7 +111,7 @@ Version packages:
 pnpm version
 ```
 
-Publish:
+Publish (on master):
 
 ```
 pnpm verify:publish
