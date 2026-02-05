@@ -11,7 +11,20 @@ Internal UI component catalog and preview tool — a lightweight alternative to 
 
 ```
 pnpm install
-pnpm -C packages/indexer-generated build && pnpm -C packages/cli build && pnpm -C packages/tools build && pnpm -C packages/app build
+pnpm build
+```
+
+If you want a manual build order:
+
+```
+pnpm -C packages/plugin-api build &&
+pnpm -C packages/core build &&
+pnpm -C packages/indexer-generated build &&
+pnpm -C packages/indexer-vite build &&
+pnpm -C packages/renderer-react build &&
+pnpm -C packages/cli build &&
+pnpm -C packages/tools build &&
+pnpm -C packages/app build
 ```
 
 ## Example app (in repo)
@@ -25,7 +38,7 @@ pnpm -C apps/example-app catalogue:dev
 ### 1) Build and link tools from this repo
 
 ```
-pnpm -C packages/indexer-generated build && pnpm -C packages/cli build && pnpm -C packages/tools build && pnpm -C packages/app build
+pnpm build
 cd packages/tools
 npm link
 ```
