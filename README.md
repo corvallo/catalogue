@@ -97,3 +97,24 @@ export const catalogConfig = {
   toolbar: [],
 };
 ```
+
+## Releases (Changesets)
+
+Create a changeset:
+
+```
+pnpm changeset
+```
+
+Version packages:
+
+```
+pnpm version
+```
+
+Publish:
+
+```
+pnpm verify:publish
+pnpm publish
+```

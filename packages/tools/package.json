@@ -28,8 +28,10 @@
   },
   "files": ["dist", "app"],
   "scripts": {
-    "build": "tsc -p tsconfig.json && node scripts/copy-app.mjs",
+    "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
+    "prepack": "node scripts/copy-app.mjs",
+    "postpack": "node scripts/clean-app.mjs",
     "lint": "echo \"no lint configured\"",
     "test": "echo \"no tests\""
   },
