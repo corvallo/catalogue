@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from "react";
-import type { NormalizedStory } from "@catalogue/plugin-api";
-import { pluginHost } from "@catalogue/shared/plugin";
-import { ReactStory } from "@catalogue/renderer-react";
+import type { NormalizedStory } from "@catalogue-lab/plugin-api";
+import { pluginHost } from "@catalogue-lab/shared/plugin";
+import { ReactStory } from "@catalogue-lab/renderer-react";
 
 type StoryCanvasProps = {
   story: NormalizedStory | null;

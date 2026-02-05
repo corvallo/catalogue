@@ -36,7 +36,7 @@ const resolveAppRoot = (startDir: string) => {
   if (envRoot && fs.existsSync(envRoot)) return envRoot;
   try {
     const require = createRequire(import.meta.url);
-    const toolsPkg = require.resolve("@catalogue/tools/package.json", { paths: [startDir] });
+    const toolsPkg = require.resolve("@catalogue-lab/catalogue/package.json", { paths: [startDir] });
     const toolsRoot = path.dirname(toolsPkg);
     const bundledApp = path.join(toolsRoot, "app");
     if (fs.existsSync(bundledApp)) return bundledApp;
@@ -47,7 +47,7 @@ const resolveAppRoot = (startDir: string) => {
   if (fs.existsSync(packageRoot)) return packageRoot;
   try {
     const require = createRequire(import.meta.url);
-    const pkgPath = require.resolve("@catalogue/app/package.json");
+    const pkgPath = require.resolve("@catalogue-lab/app/package.json");
     return path.dirname(pkgPath);
   } catch {
     // ignore
@@ -99,8 +99,8 @@ const updatePackageJson = (projectRoot: string) => {
   pkg.scripts["catalogue:dev"] = "catalogue dev";
   pkg.scripts["catalogue:build"] = "catalogue build";
   pkg.devDependencies = pkg.devDependencies ?? {};
-  if (!pkg.devDependencies["@catalogue/tools"]) {
-    pkg.devDependencies["@catalogue/tools"] = depVersion;
+  if (!pkg.devDependencies["@catalogue-lab/catalogue"]) {
+    pkg.devDependencies["@catalogue-lab/catalogue"] = depVersion;
   }
   writeJson(pkgPath, pkg);
 };

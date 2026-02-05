@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { StoryModuleMeta } from "@catalogue/tools/plugin-api";
+import type { StoryModuleMeta } from "@catalogue-lab/catalogue";
 import { Toggle } from "../components/toggle";
 
 const meta: StoryModuleMeta = {

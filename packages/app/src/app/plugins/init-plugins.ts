@@ -1,4 +1,4 @@
-import { pluginHost } from "@catalogue/shared/plugin";
+import { pluginHost } from "@catalogue-lab/shared/plugin";
 import { createToolbarBasePlugin } from "./toolbar-base-plugin";
 import { createReactRendererPlugin } from "./renderer-react-plugin";
 import { createViteIndexerPlugin } from "./indexer-vite-plugin";

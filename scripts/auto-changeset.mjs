@@ -47,6 +47,6 @@ else if (hasFix) bump = "patch";
 
 const summary = commits[0] ?? "Automated release";
 const name = `auto-${Date.now()}.md`;
-const content = `---\n"@catalogue/tools": ${bump}\n---\n\n${summary}\n`;
+const content = `---\n"@catalogue-lab/catalogue": ${bump}\n---\n\n${summary}\n`;
 
 fs.writeFileSync(path.join(changesetDir, name), content, "utf8");

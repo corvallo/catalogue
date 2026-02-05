@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import path from "node:path";
 import chokidar from "chokidar";
-import { generateIndex } from "@catalogue/indexer-generated/node";
+import { generateIndex } from "@catalogue-lab/indexer-generated/node";
 
 const args = process.argv.slice(2);
 

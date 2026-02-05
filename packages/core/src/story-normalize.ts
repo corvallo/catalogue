@@ -4,7 +4,7 @@ import type {
   StoryExport,
   StoryModuleMeta,
   StoriesIndex,
-} from "@catalogue/plugin-api";
+} from "@catalogue-lab/plugin-api";
 
 export type GlobalStoryConfig = {
   args?: Record<string, unknown>;

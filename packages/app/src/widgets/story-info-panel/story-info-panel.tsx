@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { NormalizedStory } from "@catalogue/plugin-api";
+import type { NormalizedStory } from "@catalogue-lab/plugin-api";
 import styles from "./story-info-panel.module.css";
 
 type StoryInfoPanelProps = {

@@ -8,20 +8,20 @@ const exists = (relativePath: string) => {
 };
 
 const baseAliases = [
-  { find: "@catalogue/app", replacement: path.resolve(__dirname, "src/app") },
+  { find: "@catalogue-lab/app", replacement: path.resolve(__dirname, "src/app") },
   {
-    find: /^@catalogue\/pages\/(.*)$/,
+    find: /^@catalogue-lab\/pages\/(.*)$/,
     replacement: path.resolve(__dirname, "src/pages") + "/$1",
   },
-  { find: "@catalogue/widgets", replacement: path.resolve(__dirname, "src/widgets") },
-  { find: "@catalogue/features", replacement: path.resolve(__dirname, "src/features") },
-  { find: "@catalogue/entities", replacement: path.resolve(__dirname, "src/entities") },
+  { find: "@catalogue-lab/widgets", replacement: path.resolve(__dirname, "src/widgets") },
+  { find: "@catalogue-lab/features", replacement: path.resolve(__dirname, "src/features") },
+  { find: "@catalogue-lab/entities", replacement: path.resolve(__dirname, "src/entities") },
   {
-    find: /^@catalogue\/shared\/(.*)$/,
+    find: /^@catalogue-lab\/shared\/(.*)$/,
     replacement: path.resolve(__dirname, "src/shared") + "/$1",
   },
   {
-    find: "@catalogue/config",
+    find: "@catalogue-lab/config",
     replacement: process.env.VITE_CATALOGUE_CONFIG_PATH
       ? path.resolve(process.env.VITE_CATALOGUE_CONFIG_PATH)
       : path.resolve(__dirname, "catalog.config.ts"),
@@ -30,15 +30,15 @@ const baseAliases = [
 
 const monorepoAliases = exists("../core/src")
   ? [
-      { find: "@catalogue/plugin-api", replacement: path.resolve(__dirname, "../plugin-api/src") },
-      { find: "@catalogue/core", replacement: path.resolve(__dirname, "../core/src") },
+      { find: "@catalogue-lab/plugin-api", replacement: path.resolve(__dirname, "../plugin-api/src") },
+      { find: "@catalogue-lab/core", replacement: path.resolve(__dirname, "../core/src") },
       {
-        find: "@catalogue/renderer-react",
+        find: "@catalogue-lab/renderer-react",
         replacement: path.resolve(__dirname, "../renderer-react/src"),
       },
-      { find: "@catalogue/indexer-vite", replacement: path.resolve(__dirname, "../indexer-vite/src") },
+      { find: "@catalogue-lab/indexer-vite", replacement: path.resolve(__dirname, "../indexer-vite/src") },
       {
-        find: "@catalogue/indexer-generated",
+        find: "@catalogue-lab/indexer-generated",
         replacement: path.resolve(__dirname, "../indexer-generated/src"),
       },
     ]

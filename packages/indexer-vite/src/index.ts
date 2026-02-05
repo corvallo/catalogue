@@ -4,8 +4,8 @@ import type {
   StoryExport,
   StoryModule,
   StoryModuleMeta,
-} from "@catalogue/plugin-api";
-import { createStoriesIndex, normalizeStoryModule } from "@catalogue/core";
+} from "@catalogue-lab/plugin-api";
+import { createStoriesIndex, normalizeStoryModule } from "@catalogue-lab/core";
 
 type ViteGlobModules = Record<string, () => Promise<StoryModule>>;
 

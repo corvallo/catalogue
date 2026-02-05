@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/indexer-generated",
+  "name": "@catalogue-lab/indexer-generated",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -32,8 +32,8 @@
     "@types/node": "^20.0.0"
   },
   "dependencies": {
-    "@catalogue/core": "0.0.0",
-    "@catalogue/plugin-api": "0.0.0",
+    "@catalogue-lab/core": "0.0.0",
+    "@catalogue-lab/plugin-api": "0.0.0",
     "fast-glob": "^3.3.2"
   }
 }

@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { useCatalogStore } from "@catalogue/shared/store";
-import { useStoryIndex } from "@catalogue/features/story-indexing";
-import { useStoryRouting } from "@catalogue/features/story-routing";
-import { useCatalogConfig } from "@catalogue/features/catalog-config";
-import { Toolbar } from "@catalogue/widgets/toolbar";
-import { Sidebar } from "@catalogue/widgets/sidebar";
-import { StoryCanvas } from "@catalogue/widgets/story-canvas";
-import { StoryInfoPanel } from "@catalogue/widgets/story-info-panel";
+import { useCatalogStore } from "@catalogue-lab/shared/store";
+import { useStoryIndex } from "@catalogue-lab/features/story-indexing";
+import { useStoryRouting } from "@catalogue-lab/features/story-routing";
+import { useCatalogConfig } from "@catalogue-lab/features/catalog-config";
+import { Toolbar } from "@catalogue-lab/widgets/toolbar";
+import { Sidebar } from "@catalogue-lab/widgets/sidebar";
+import { StoryCanvas } from "@catalogue-lab/widgets/story-canvas";
+import { StoryInfoPanel } from "@catalogue-lab/widgets/story-info-panel";
 import clsx from "clsx";
 import styles from "./catalog-page.module.css";
 

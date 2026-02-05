@@ -29,7 +29,7 @@ pnpm -C packages/app build
 ## How to install
 
 ```
-npm i -D @catalogue/tools
+npm i -D @catalogue-lab/catalogue
 npx catalogue init
 npm run catalogue:dev
 ```
@@ -63,7 +63,7 @@ CATALOGUE_PORT=9000 npm run catalogue:dev
 Minimal inline component story example:
 
 ```tsx
-import type { StoryModuleMeta } from "@catalogue/tools";
+import type { StoryModuleMeta } from "@catalogue-lab/catalogue";
 
 const Button = ({ label }: { label: string }) => {
   return (

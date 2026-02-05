@@ -27,7 +27,7 @@ importers:
         specifier: ^19.0.0
         version: 19.2.4(react@19.2.4)
     devDependencies:
-      '@catalogue/tools':
+      '@catalogue-lab/catalogue':
         specifier: 0.0.0
         version: link:../../packages/tools
       '@types/react':
@@ -48,19 +48,19 @@ importers:
 
   packages/app:
     dependencies:
-      '@catalogue/core':
+      '@catalogue-lab/core':
         specifier: 0.0.0
         version: link:../core
-      '@catalogue/indexer-generated':
+      '@catalogue-lab/indexer-generated':
         specifier: 0.0.0
         version: link:../indexer-generated
-      '@catalogue/indexer-vite':
+      '@catalogue-lab/indexer-vite':
         specifier: 0.0.0
         version: link:../indexer-vite
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
-      '@catalogue/renderer-react':
+      '@catalogue-lab/renderer-react':
         specifier: 0.0.0
         version: link:../renderer-react
       clsx:
@@ -106,16 +106,16 @@ importers:
 
   packages/core:
     dependencies:
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
 
   packages/indexer-generated:
     dependencies:
-      '@catalogue/core':
+      '@catalogue-lab/core':
         specifier: 0.0.0
         version: link:../core
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
       fast-glob:
@@ -128,10 +128,10 @@ importers:
 
   packages/indexer-vite:
     dependencies:
-      '@catalogue/core':
+      '@catalogue-lab/core':
         specifier: 0.0.0
         version: link:../core
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
 
@@ -139,7 +139,7 @@ importers:
 
   packages/renderer-react:
     dependencies:
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
       react:
@@ -158,25 +158,25 @@ importers:
 
   packages/tools:
     dependencies:
-      '@catalogue/app':
+      '@catalogue-lab/app':
         specifier: 0.0.0
         version: link:../app
-      '@catalogue/cli':
+      '@catalogue-lab/cli':
         specifier: 0.0.0
         version: link:../cli
-      '@catalogue/core':
+      '@catalogue-lab/core':
         specifier: 0.0.0
         version: link:../core
-      '@catalogue/indexer-generated':
+      '@catalogue-lab/indexer-generated':
         specifier: 0.0.0
         version: link:../indexer-generated
-      '@catalogue/indexer-vite':
+      '@catalogue-lab/indexer-vite':
         specifier: 0.0.0
         version: link:../indexer-vite
-      '@catalogue/plugin-api':
+      '@catalogue-lab/plugin-api':
         specifier: 0.0.0
         version: link:../plugin-api
-      '@catalogue/renderer-react':
+      '@catalogue-lab/renderer-react':
         specifier: 0.0.0
         version: link:../renderer-react
       '@vitejs/plugin-react':

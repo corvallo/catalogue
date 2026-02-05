@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/tools",
+  "name": "@catalogue-lab/catalogue",
   "version": "0.0.0",
   "type": "module",
   "engines": {
@@ -36,13 +36,13 @@
     "test": "echo \"no tests\""
   },
   "dependencies": {
-    "@catalogue/cli": "0.0.0",
-    "@catalogue/app": "0.0.0",
-    "@catalogue/plugin-api": "0.0.0",
-    "@catalogue/indexer-generated": "0.0.0",
-    "@catalogue/core": "0.0.0",
-    "@catalogue/indexer-vite": "0.0.0",
-    "@catalogue/renderer-react": "0.0.0",
+    "@catalogue-lab/cli": "0.0.0",
+    "@catalogue-lab/app": "0.0.0",
+    "@catalogue-lab/plugin-api": "0.0.0",
+    "@catalogue-lab/indexer-generated": "0.0.0",
+    "@catalogue-lab/core": "0.0.0",
+    "@catalogue-lab/indexer-vite": "0.0.0",
+    "@catalogue-lab/renderer-react": "0.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "chokidar": "^4.0.1",
     "clsx": "^2.1.1",

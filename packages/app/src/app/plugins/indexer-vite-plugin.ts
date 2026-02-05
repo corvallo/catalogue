@@ -1,5 +1,5 @@
-import type { Plugin, StoryModule } from "@catalogue/plugin-api";
-import { createViteIndexer } from "@catalogue/indexer-vite";
+import type { Plugin, StoryModule } from "@catalogue-lab/plugin-api";
+import { createViteIndexer } from "@catalogue-lab/indexer-vite";
 
 const modules = import.meta.glob<StoryModule>("../../stories/**/*.stories.tsx");
 

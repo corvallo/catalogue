@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/plugin-api",
+  "name": "@catalogue-lab/plugin-api",
   "version": "0.0.0",
   "private": true,
   "type": "module",
