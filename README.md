@@ -5,7 +5,6 @@ Internal UI component catalog and preview tool — a lightweight alternative to 
 ## Requirements
 
 - Node >= 20
-- pnpm (repo dev) / npm (external project tests)
 
 ## Monorepo quickstart
 
@@ -27,37 +26,37 @@ pnpm -C packages/tools build &&
 pnpm -C packages/app build
 ```
 
-## Example app (in repo)
+## How to install
 
 ```
-pnpm -C apps/example-app catalogue:dev
-```
-
-## External project (npm, local link)
-
-### 1) Build and link tools from this repo
-
-```
-pnpm build
-cd packages/tools
-npm link
-```
-
-### 2) Link in the external project
-
-```
-cd /path/to/your-project
-npm link @catalogue/tools
-```
-
-### 3) Initialize and run
-
-```
+npm i -D @catalogue/tools
 npx catalogue init
 npm run catalogue:dev
 ```
 
 The catalog runs on http://localhost:8008 by default.
+
+To use a different port:
+
+```
+CATALOGUE_PORT=9000 npm run catalogue:dev
+```
+
+## What it does today
+
+- React story rendering
+- Story discovery via generated index (auto on `catalogue:dev`)
+- Sidebar tree with grouping and search
+- Toolbar actions (theme, remount, copy link, grid, outlines, info)
+- Story info panel (id, title, file path, component path)
+- Deep links to stories
+
+## Not yet
+
+- Other renderers (Svelte/Vue/Web Components)
+- Additional panels/add-ons
+- Advanced theming/decorators UI
+- Visual regression/testing
 
 ## Story format
 
@@ -66,7 +65,7 @@ Minimal inline component story example:
 ```tsx
 import type { StoryModuleMeta } from "@catalogue/tools";
 
-const InlineButton = ({ label }: { label: string }) => {
+const Button = ({ label }: { label: string }) => {
   return (
     <button type='button' style={{ padding: "8px 12px", borderRadius: 8 }}>
       {label}
@@ -75,8 +74,8 @@ const InlineButton = ({ label }: { label: string }) => {
 };
 
 const meta: StoryModuleMeta = {
-  title: "Atoms/InlineButton",
-  component: InlineButton,
+  title: "Atoms/Button",
+  component: Button,
   args: { label: "Click me" },
   parameters: {
     componentPath: "src/stories/inline-button.stories.tsx",
@@ -112,9 +111,17 @@ Version packages:
 pnpm version
 ```
 
-Publish:
+Publish (on master):
 
 ```
 pnpm verify:publish
 pnpm publish
+```
+
+## Example app (optional)
+
+If you want to test the example app included in the repo:
+
+```
+pnpm -C apps/example-app catalogue:dev
 ```
