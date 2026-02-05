@@ -2,6 +2,14 @@
   "name": "@catalogue-lab/catalogue",
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corvallo/catalogue.git"
+  },
+  "homepage": "https://github.com/corvallo/catalogue",
+  "bugs": {
+    "url": "https://github.com/corvallo/catalogue/issues"
+  },
   "engines": {
     "node": ">=20"
   },
