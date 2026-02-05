@@ -2,7 +2,6 @@
   "name": "@catalogue-lab/example-app",
   "private": true,
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -19,7 +18,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@catalogue-lab/catalogue": "0.0.0",
+    "@catalogue-lab/catalogue": "0.0.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
