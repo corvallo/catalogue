@@ -1,9 +1,9 @@
 import type { ComponentType, ReactNode } from "react";
 import { createElement, isValidElement, memo, useMemo } from "react";
 import { Moon, Sun } from "lucide-react";
-import { pluginHost } from "@catalogue/shared/plugin";
-import { useCatalogStore } from "@catalogue/shared/store";
-import { Button } from "@catalogue/shared/ui";
+import { pluginHost } from "@catalogue-lab/shared/plugin";
+import { useCatalogStore } from "@catalogue-lab/shared/store";
+import { Button } from "@catalogue-lab/shared/ui";
 import styles from "./toolbar.module.css";
 
 export const Toolbar = memo(() => {

@@ -1,1 +1,1 @@
-export * from "@catalogue/core";
+export * from "@catalogue-lab/core";

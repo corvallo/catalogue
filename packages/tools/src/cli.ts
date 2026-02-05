@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-import "@catalogue/cli";
+import "@catalogue-lab/cli";

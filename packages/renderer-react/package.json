@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/renderer-react",
+  "name": "@catalogue-lab/renderer-react",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -26,7 +26,7 @@
     "@types/react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@catalogue/plugin-api": "0.0.0",
+    "@catalogue-lab/plugin-api": "0.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }

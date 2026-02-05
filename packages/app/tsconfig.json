@@ -19,18 +19,18 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
-      "@catalogue/app/*": ["src/app/*"],
-      "@catalogue/pages/*": ["src/pages/*"],
-      "@catalogue/widgets/*": ["src/widgets/*"],
-      "@catalogue/features/*": ["src/features/*"],
-      "@catalogue/entities/*": ["src/entities/*"],
-      "@catalogue/shared/*": ["src/shared/*"],
-      "@catalogue/config": ["catalog.config.ts"],
-      "@catalogue/plugin-api": ["../../packages/plugin-api/src"],
-      "@catalogue/core": ["../../packages/core/src"],
-      "@catalogue/renderer-react": ["../../packages/renderer-react/src"],
-      "@catalogue/indexer-vite": ["../../packages/indexer-vite/src"],
-      "@catalogue/indexer-generated": ["../../packages/indexer-generated/src"]
+      "@catalogue-lab/app/*": ["src/app/*"],
+      "@catalogue-lab/pages/*": ["src/pages/*"],
+      "@catalogue-lab/widgets/*": ["src/widgets/*"],
+      "@catalogue-lab/features/*": ["src/features/*"],
+      "@catalogue-lab/entities/*": ["src/entities/*"],
+      "@catalogue-lab/shared/*": ["src/shared/*"],
+      "@catalogue-lab/config": ["catalog.config.ts"],
+      "@catalogue-lab/plugin-api": ["../../packages/plugin-api/src"],
+      "@catalogue-lab/core": ["../../packages/core/src"],
+      "@catalogue-lab/renderer-react": ["../../packages/renderer-react/src"],
+      "@catalogue-lab/indexer-vite": ["../../packages/indexer-vite/src"],
+      "@catalogue-lab/indexer-generated": ["../../packages/indexer-generated/src"]
     }
   },
   "include": ["src"]

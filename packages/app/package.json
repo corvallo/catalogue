@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/app",
+  "name": "@catalogue-lab/app",
   "private": false,
   "version": "0.0.0",
   "private": true,
@@ -18,14 +18,14 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview",
-    "index:generate": "pnpm --filter @catalogue/indexer-generated build && catalog-index --patterns \"${CATALOGUE_STORIES:-src/**/*.stories.tsx}\" --output \"${CATALOGUE_INDEX_OUTPUT:-src/stories-index.ts}\""
+    "index:generate": "pnpm --filter @catalogue-lab/indexer-generated build && catalog-index --patterns \"${CATALOGUE_STORIES:-src/**/*.stories.tsx}\" --output \"${CATALOGUE_INDEX_OUTPUT:-src/stories-index.ts}\""
   },
   "dependencies": {
-    "@catalogue/core": "0.0.0",
-    "@catalogue/indexer-generated": "0.0.0",
-    "@catalogue/indexer-vite": "0.0.0",
-    "@catalogue/plugin-api": "0.0.0",
-    "@catalogue/renderer-react": "0.0.0",
+    "@catalogue-lab/core": "0.0.0",
+    "@catalogue-lab/indexer-generated": "0.0.0",
+    "@catalogue-lab/indexer-vite": "0.0.0",
+    "@catalogue-lab/plugin-api": "0.0.0",
+    "@catalogue-lab/renderer-react": "0.0.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",
     "react": "^19.0.0",

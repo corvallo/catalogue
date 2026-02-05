@@ -1,5 +1,5 @@
-import type { Plugin } from "@catalogue/plugin-api";
-import { createReactRenderer } from "@catalogue/renderer-react";
+import type { Plugin } from "@catalogue-lab/plugin-api";
+import { createReactRenderer } from "@catalogue-lab/renderer-react";
 
 export const createReactRendererPlugin = (): Plugin => {
   return {

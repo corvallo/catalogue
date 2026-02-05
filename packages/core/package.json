@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/core",
+  "name": "@catalogue-lab/core",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -22,6 +22,6 @@
     "test": "echo \"no tests\""
   },
   "dependencies": {
-    "@catalogue/plugin-api": "0.0.0"
+    "@catalogue-lab/plugin-api": "0.0.0"
   }
 }

@@ -1,4 +1,4 @@
-import type { IndexerAdapter, StoriesIndex } from "@catalogue/plugin-api";
+import type { IndexerAdapter, StoriesIndex } from "@catalogue-lab/plugin-api";
 
 export type GeneratedIndexLoader = () => Promise<StoriesIndex | { index: StoriesIndex }>;
 

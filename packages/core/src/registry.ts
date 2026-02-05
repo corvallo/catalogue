@@ -1,4 +1,4 @@
-import type { NormalizedStory } from "@catalogue/plugin-api";
+import type { NormalizedStory } from "@catalogue-lab/plugin-api";
 
 export class StoryRegistry {
   private stories = new Map<string, NormalizedStory>();

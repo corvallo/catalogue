@@ -1,6 +1,6 @@
 import { memo } from "react";
-import { StorySearch } from "@catalogue/features/story-search";
-import { StoryTree } from "@catalogue/features/story-tree";
+import { StorySearch } from "@catalogue-lab/features/story-search";
+import { StoryTree } from "@catalogue-lab/features/story-tree";
 import styles from "./sidebar.module.css";
 
 export const Sidebar = memo(() => {

@@ -1,1 +1,1 @@
-export * from "@catalogue/plugin-api";
+export * from "@catalogue-lab/plugin-api";

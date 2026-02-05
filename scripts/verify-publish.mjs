@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "..");
 const packagesDir = path.resolve(root, "packages");
 
-const allowed = new Set(["@catalogue/tools"]);
+const allowed = new Set(["@catalogue-lab/catalogue"]);
 const offenders = [];
 
 for (const name of fs.readdirSync(packagesDir)) {

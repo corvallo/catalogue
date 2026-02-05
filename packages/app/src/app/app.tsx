@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CatalogPage } from "@catalogue/pages/catalog";
-import { NotFoundPage } from "@catalogue/pages/not-found";
+import { CatalogPage } from "@catalogue-lab/pages/catalog";
+import { NotFoundPage } from "@catalogue-lab/pages/not-found";
 import "./plugins/init-plugins";
 
 export const App = () => {

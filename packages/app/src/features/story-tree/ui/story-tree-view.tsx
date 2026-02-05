@@ -1,4 +1,4 @@
-import type { TreeNode } from "@catalogue/entities/story";
+import type { TreeNode } from "@catalogue-lab/entities/story";
 import { StoryTreeGroup } from "./story-tree-group";
 
 type StoryTreeViewProps = {

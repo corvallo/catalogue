@@ -1,5 +1,5 @@
-import { createStoriesIndex, normalizeStoryModule } from "@catalogue/core";
-import type { StoryModule, StoryModuleMeta, StoryExport } from "@catalogue/plugin-api";
+import { createStoriesIndex, normalizeStoryModule } from "@catalogue-lab/catalogue/core";
+import type { StoryModule, StoryModuleMeta, StoryExport } from "@catalogue-lab/catalogue";
 
 import * as StoryModule0 from "./stories/info-card.stories.tsx";
 import * as StoryModule1 from "./stories/toggle.stories.tsx";

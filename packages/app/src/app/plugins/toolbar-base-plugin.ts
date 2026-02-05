@@ -1,6 +1,6 @@
-import type { Plugin, ToolbarItem } from "@catalogue/plugin-api";
+import type { Plugin, ToolbarItem } from "@catalogue-lab/plugin-api";
 import { Copy, Grid2X2, Info, Moon, RefreshCw, SquareDashed } from "lucide-react";
-import { useCatalogStore } from "@catalogue/shared/store";
+import { useCatalogStore } from "@catalogue-lab/shared/store";
 
 const getToolbarItems = (): ToolbarItem[] => {
   return [

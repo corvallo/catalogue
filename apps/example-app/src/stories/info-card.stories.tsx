@@ -1,4 +1,4 @@
-import type { StoryModuleMeta } from "@catalogue/tools/plugin-api";
+import type { StoryModuleMeta } from "@catalogue-lab/catalogue";
 import { InfoCard } from "../components/info-card";
 
 const meta: StoryModuleMeta = {

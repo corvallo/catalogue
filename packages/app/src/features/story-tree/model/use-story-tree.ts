@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-import { useCatalogStore } from "@catalogue/shared/store";
-import { loadCatalogConfig } from "@catalogue/shared/config";
-import type { StoryRef, TreeNode } from "@catalogue/entities/story";
-import { buildTree, filterTree, sortTree } from "@catalogue/entities/story";
+import { useCatalogStore } from "@catalogue-lab/shared/store";
+import { loadCatalogConfig } from "@catalogue-lab/shared/config";
+import type { StoryRef, TreeNode } from "@catalogue-lab/entities/story";
+import { buildTree, filterTree, sortTree } from "@catalogue-lab/entities/story";
 
 type StoryTreeState = {
   tree: TreeNode | null;

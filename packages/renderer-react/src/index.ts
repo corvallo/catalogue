@@ -6,7 +6,7 @@ import type {
   RendererAdapter,
   RendererMountArgs,
   RendererUnmountArgs,
-} from "@catalogue/plugin-api";
+} from "@catalogue-lab/plugin-api";
 
 const renderStory = (story: NormalizedStory): React.ReactNode => {
   if (story.render) {

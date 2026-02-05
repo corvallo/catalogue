@@ -5,7 +5,7 @@ import type {
   PluginContext,
   RendererAdapter,
   ToolbarItem,
-} from "@catalogue/plugin-api";
+} from "@catalogue-lab/plugin-api";
 
 export class PluginHost {
   private toolbarItems = new Map<string, ToolbarItem>();

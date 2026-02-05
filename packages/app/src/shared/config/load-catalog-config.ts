@@ -1,4 +1,4 @@
-import { catalogConfig } from "@catalogue/config";
+import { catalogConfig } from "@catalogue-lab/config";
 import type { ToolbarItemConfig } from "../store";
 
 type CatalogConfig = {

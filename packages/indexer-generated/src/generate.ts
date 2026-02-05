@@ -28,8 +28,8 @@ export const generateIndex = async (options: GenerateOptions) => {
     modules.push(`{ modulePath: "${importPath}", filePath: "${importPath}", mod: ${varName} }`);
   });
 
-  const content = `import { createStoriesIndex, normalizeStoryModule } from "@catalogue/tools/core";
-import type { StoryModule, StoryModuleMeta, StoryExport } from "@catalogue/tools/plugin-api";
+  const content = `import { createStoriesIndex, normalizeStoryModule } from "@catalogue-lab/catalogue/core";
+import type { StoryModule, StoryModuleMeta, StoryExport } from "@catalogue-lab/catalogue";
 
 ${imports.join("\n")}
 

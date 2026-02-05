@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { StoriesIndex } from "@catalogue/plugin-api";
+import type { StoriesIndex } from "@catalogue-lab/plugin-api";
 
 export type LayoutMode = "centered" | "padded" | "fullscreen";
 

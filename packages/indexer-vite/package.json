@@ -1,5 +1,5 @@
 {
-  "name": "@catalogue/indexer-vite",
+  "name": "@catalogue-lab/indexer-vite",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -22,7 +22,7 @@
     "test": "echo \"no tests\""
   },
   "dependencies": {
-    "@catalogue/core": "0.0.0",
-    "@catalogue/plugin-api": "0.0.0"
+    "@catalogue-lab/core": "0.0.0",
+    "@catalogue-lab/plugin-api": "0.0.0"
   }
 }
