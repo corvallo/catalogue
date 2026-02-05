@@ -1,6 +1,6 @@
 import type { Plugin } from "@catalogue/plugin-api";
 import { createGeneratedIndexer } from "@catalogue/indexer-generated";
-import { loadCatalogConfig } from "@catalogue/shared/config/load-catalog-config";
+import { loadCatalogConfig } from "@catalogue/shared";
 
 export const createGeneratedIndexerPlugin = (): Plugin => {
   return {

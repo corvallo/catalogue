@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { loadCatalogConfig } from "@catalogue/shared/config/load-catalog-config";
-import { useCatalogStore } from "@catalogue/shared/store/catalog-store";
+import { loadCatalogConfig } from "@catalogue/shared/config";
+import { useCatalogStore } from "@catalogue/shared/store";
 
 export const useCatalogConfig = () => {
   const setToolbarConfig = useCatalogStore((state) => state.setToolbarConfig);

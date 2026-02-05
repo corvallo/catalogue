@@ -1,6 +1,5 @@
 import { Search } from "lucide-react";
-import { useCatalogStore } from "@catalogue/shared/store/catalog-store";
-import { TextInput } from "@catalogue/shared/ui/text-input/text-input";
+import { useCatalogStore, TextInput } from "@catalogue/shared";
 import styles from "./story-search.module.css";
 
 export const StorySearch = () => {

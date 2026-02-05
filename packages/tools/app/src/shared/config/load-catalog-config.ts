@@ -1,5 +1,5 @@
 import { catalogConfig } from "@catalogue/config";
-import type { ToolbarItemConfig } from "@catalogue/shared/store/catalog-store";
+import type { ToolbarItemConfig } from "../store";
 
 type CatalogConfig = {
   toolbar?: ToolbarItemConfig[];

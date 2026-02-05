@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { useCatalogStore } from "@catalogue/shared/store/catalog-store";
-import { decodeStoryId, encodeStoryId } from "@catalogue/shared/lib/story-id";
+import { useCatalogStore, decodeStoryId, encodeStoryId } from "@catalogue/shared";
 
 export const useStoryRouting = () => {
   const location = useLocation();

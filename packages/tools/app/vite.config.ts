@@ -9,11 +9,17 @@ const exists = (relativePath: string) => {
 
 const baseAliases = [
   { find: "@catalogue/app", replacement: path.resolve(__dirname, "src/app") },
-  { find: "@catalogue/pages", replacement: path.resolve(__dirname, "src/pages") },
+  { find: "@catalogue/pages", replacement: path.resolve(__dirname, "src/pages/index.ts") },
+  { find: /^@catalogue\/pages\/(.*)$/,
+    replacement: path.resolve(__dirname, "src/pages") + "/$1" },
   { find: "@catalogue/widgets", replacement: path.resolve(__dirname, "src/widgets") },
   { find: "@catalogue/features", replacement: path.resolve(__dirname, "src/features") },
   { find: "@catalogue/entities", replacement: path.resolve(__dirname, "src/entities") },
-  { find: "@catalogue/shared", replacement: path.resolve(__dirname, "src/shared") },
+  { find: /^@catalogue\/shared$/, replacement: path.resolve(__dirname, "src/shared/index.ts") },
+  {
+    find: /^@catalogue\/shared\/(.*)$/,
+    replacement: path.resolve(__dirname, "src/shared") + "/$1",
+  },
   {
     find: "@catalogue/config",
     replacement: process.env.VITE_CATALOGUE_CONFIG_PATH

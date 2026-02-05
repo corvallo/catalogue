@@ -1,0 +1,12 @@
+import { pluginHost } from "@catalogue/shared/plugin";
+import { createToolbarBasePlugin } from "./toolbar-base-plugin";
+import { createReactRendererPlugin } from "./renderer-react-plugin";
+import { createViteIndexerPlugin } from "./indexer-vite-plugin";
+import { createGeneratedIndexerPlugin } from "./indexer-generated-plugin";
+
+pluginHost.init([
+  createToolbarBasePlugin(),
+  createReactRendererPlugin(),
+  createViteIndexerPlugin(),
+  createGeneratedIndexerPlugin(),
+]);

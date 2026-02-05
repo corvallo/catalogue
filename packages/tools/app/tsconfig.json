@@ -20,10 +20,12 @@
     "baseUrl": ".",
     "paths": {
       "@catalogue/app/*": ["src/app/*"],
+      "@catalogue/pages": ["src/pages/index.ts"],
       "@catalogue/pages/*": ["src/pages/*"],
       "@catalogue/widgets/*": ["src/widgets/*"],
       "@catalogue/features/*": ["src/features/*"],
       "@catalogue/entities/*": ["src/entities/*"],
+      "@catalogue/shared": ["src/shared/index.ts"],
       "@catalogue/shared/*": ["src/shared/*"],
       "@catalogue/config": ["catalog.config.ts"],
       "@catalogue/plugin-api": ["../../packages/plugin-api/src"],

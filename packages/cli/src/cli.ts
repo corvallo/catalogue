@@ -119,6 +119,14 @@ const runCommand = (command: string, argsList: string[], cwd: string, env?: Node
   });
 };
 
+const startCommand = (command: string, argsList: string[], cwd: string, env?: NodeJS.ProcessEnv) => {
+  return spawn(command, argsList, {
+    cwd,
+    stdio: "inherit",
+    env: { ...process.env, ...env },
+  });
+};
+
 const run = async () => {
   const cwd = process.cwd();
   const projectRoot = findProjectRoot(cwd);
@@ -162,16 +170,28 @@ const run = async () => {
   };
 
   if (command === "dev") {
-    await runCommand(
+    const watcher = startCommand(
       "catalog-index",
-      ["--cwd", projectRoot, "--patterns", storiesPattern, "--output", generatedIndexPath],
+      [
+        "--watch",
+        "--cwd",
+        projectRoot,
+        "--patterns",
+        storiesPattern,
+        "--output",
+        generatedIndexPath,
+      ],
       projectRoot
     );
     log("Catalogue running on http://localhost:8008");
-    await runCommand("pnpm", ["-C", appRoot, "dev"], appRoot, {
-      ...env,
-      VITE_LOG_LEVEL: "silent",
-    });
+    try {
+      await runCommand("pnpm", ["-C", appRoot, "dev"], appRoot, {
+        ...env,
+        VITE_LOG_LEVEL: "silent",
+      });
+    } finally {
+      watcher.kill("SIGTERM");
+    }
     return;
   }
 

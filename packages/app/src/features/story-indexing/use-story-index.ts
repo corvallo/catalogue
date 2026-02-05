@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { useCatalogStore } from "@catalogue/shared/store/catalog-store";
-import { loadCatalogConfig } from "@catalogue/shared/config/load-catalog-config";
-import { pluginHost } from "@catalogue/shared/plugin/plugin-host";
+import { useCatalogStore } from "@catalogue/shared/store";
+import { loadCatalogConfig } from "@catalogue/shared/config";
+import { pluginHost } from "@catalogue/shared/plugin";
 
 export const useStoryIndex = () => {
   const setStoriesIndex = useCatalogStore((state) => state.setStoriesIndex);

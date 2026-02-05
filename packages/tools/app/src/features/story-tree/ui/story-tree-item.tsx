@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { NotebookPen } from "lucide-react";
-import { Button } from "@catalogue/shared/ui/button/button";
+import { Button } from "@catalogue/shared";
 import { useStoryTreeItem } from "../model/use-story-tree-item";
 import styles from "./story-tree.module.css";
 

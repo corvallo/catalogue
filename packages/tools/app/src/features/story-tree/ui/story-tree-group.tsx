@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { ChevronDown, ChevronRight, GalleryHorizontalEnd } from "lucide-react";
-import type { TreeNode } from "@catalogue/entities/story/model/tree";
+import type { TreeNode } from "@catalogue/entities/story";
 import { StoryTreeItem } from "./story-tree-item";
 import styles from "./story-tree.module.css";
 

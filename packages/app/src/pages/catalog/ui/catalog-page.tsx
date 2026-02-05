@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { useCatalogStore } from "@catalogue/shared/store/catalog-store";
-import { useStoryIndex } from "@catalogue/features/story-indexing/use-story-index";
-import { useStoryRouting } from "@catalogue/features/story-routing/use-story-routing";
-import { useCatalogConfig } from "@catalogue/features/catalog-config/use-catalog-config";
+import { useCatalogStore } from "@catalogue/shared/store";
+import { useStoryIndex } from "@catalogue/features/story-indexing";
+import { useStoryRouting } from "@catalogue/features/story-routing";
+import { useCatalogConfig } from "@catalogue/features/catalog-config";
 import { Toolbar } from "@catalogue/widgets/toolbar";
 import { Sidebar } from "@catalogue/widgets/sidebar";
 import { StoryCanvas } from "@catalogue/widgets/story-canvas";
