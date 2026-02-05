@@ -59,4 +59,4 @@ jobs:
         if: github.ref == 'refs/heads/master'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm publish
+        run: pnpm run publish
