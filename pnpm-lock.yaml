@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@catalogue-lab/catalogue':
         specifier: 0.0.1
-        version: link:../../packages/tools
+        version: link:../../packages/catalogue
       '@types/react':
         specifier: ^19.0.0
         version: 19.2.10
@@ -98,6 +98,61 @@ importers:
         specifier: ^7.2.4
         version: 7.3.1(@types/node@20.19.31)
 
+  packages/catalogue:
+    dependencies:
+      '@catalogue-lab/app':
+        specifier: 0.0.0
+        version: link:../app
+      '@catalogue-lab/cli':
+        specifier: 0.0.0
+        version: link:../cli
+      '@catalogue-lab/core':
+        specifier: 0.0.0
+        version: link:../core
+      '@catalogue-lab/indexer-generated':
+        specifier: 0.0.0
+        version: link:../indexer-generated
+      '@catalogue-lab/indexer-vite':
+        specifier: 0.0.0
+        version: link:../indexer-vite
+      '@catalogue-lab/plugin-api':
+        specifier: 0.0.0
+        version: link:../plugin-api
+      '@catalogue-lab/renderer-react':
+        specifier: 0.0.0
+        version: link:../renderer-react
+      '@vitejs/plugin-react':
+        specifier: ^4.3.4
+        version: 4.7.0(vite@7.3.1(@types/node@20.19.31))
+      chokidar:
+        specifier: ^4.0.1
+        version: 4.0.3
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lucide-react:
+        specifier: ^0.474.0
+        version: 0.474.0(react@19.2.4)
+      react:
+        specifier: ^19.0.0
+        version: 19.2.4
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.2.4(react@19.2.4)
+      react-router-dom:
+        specifier: ^6.28.0
+        version: 6.30.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      vite:
+        specifier: ^7.2.4
+        version: 7.3.1(@types/node@20.19.31)
+      zustand:
+        specifier: ^5.0.2
+        version: 5.0.10(@types/react@19.2.10)(react@19.2.4)
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.19.31
+
   packages/cli:
     devDependencies:
       '@types/node':
@@ -155,61 +210,6 @@ importers:
       '@types/react-dom':
         specifier: ^19.0.0
         version: 19.2.3(@types/react@19.2.10)
-
-  packages/tools:
-    dependencies:
-      '@catalogue-lab/app':
-        specifier: 0.0.0
-        version: link:../app
-      '@catalogue-lab/cli':
-        specifier: 0.0.0
-        version: link:../cli
-      '@catalogue-lab/core':
-        specifier: 0.0.0
-        version: link:../core
-      '@catalogue-lab/indexer-generated':
-        specifier: 0.0.0
-        version: link:../indexer-generated
-      '@catalogue-lab/indexer-vite':
-        specifier: 0.0.0
-        version: link:../indexer-vite
-      '@catalogue-lab/plugin-api':
-        specifier: 0.0.0
-        version: link:../plugin-api
-      '@catalogue-lab/renderer-react':
-        specifier: 0.0.0
-        version: link:../renderer-react
-      '@vitejs/plugin-react':
-        specifier: ^4.3.4
-        version: 4.7.0(vite@7.3.1(@types/node@20.19.31))
-      chokidar:
-        specifier: ^4.0.1
-        version: 4.0.3
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      lucide-react:
-        specifier: ^0.474.0
-        version: 0.474.0(react@19.2.4)
-      react:
-        specifier: ^19.0.0
-        version: 19.2.4
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.2.4(react@19.2.4)
-      react-router-dom:
-        specifier: ^6.28.0
-        version: 6.30.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      vite:
-        specifier: ^7.2.4
-        version: 7.3.1(@types/node@20.19.31)
-      zustand:
-        specifier: ^5.0.2
-        version: 5.0.10(@types/react@19.2.10)(react@19.2.4)
-    devDependencies:
-      '@types/node':
-        specifier: ^20.0.0
-        version: 20.19.31
 
 packages:
 

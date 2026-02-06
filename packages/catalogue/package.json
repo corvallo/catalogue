@@ -1,6 +1,6 @@
 {
   "name": "@catalogue-lab/catalogue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "repository": {
     "type": "git",
@@ -36,13 +36,14 @@
   },
   "files": [
     "dist",
-    "app"
+    "app",
+    "node_modules/@catalogue-lab"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
-    "prepack": "node scripts/copy-app.mjs",
-    "postpack": "node scripts/clean-app.mjs",
+    "prepack": "node scripts/copy-app.mjs && node scripts/copy-internal.mjs",
+    "postpack": "node scripts/clean-app.mjs && node scripts/clean-internal.mjs",
     "lint": "echo \"no lint configured\"",
     "test": "echo \"no tests\""
   },
@@ -64,6 +65,15 @@
     "vite": "^7.2.4",
     "zustand": "^5.0.2"
   },
+  "bundledDependencies": [
+    "@catalogue-lab/app",
+    "@catalogue-lab/cli",
+    "@catalogue-lab/core",
+    "@catalogue-lab/plugin-api",
+    "@catalogue-lab/indexer-generated",
+    "@catalogue-lab/indexer-vite",
+    "@catalogue-lab/renderer-react"
+  ],
   "devDependencies": {
     "@types/node": "^20.0.0"
   }
