@@ -7,7 +7,16 @@ const exists = (relativePath: string) => {
   return fs.existsSync(path.resolve(__dirname, relativePath));
 };
 
+const localNodeModules = path.resolve(__dirname, "..", "node_modules");
+const localDeps = ["react", "react-dom", "react-router-dom"]
+  .map((name) => {
+    const candidate = path.resolve(localNodeModules, name);
+    return fs.existsSync(candidate) ? { find: name, replacement: candidate } : null;
+  })
+  .filter((entry): entry is { find: string; replacement: string } => Boolean(entry));
+
 const baseAliases = [
+  ...localDeps,
   { find: "@catalogue-lab/app", replacement: path.resolve(__dirname, "src/app") },
   {
     find: /^@catalogue-lab\/pages\/(.*)$/,
@@ -54,6 +63,10 @@ export default defineConfig({
   plugins: [react()],
   logLevel,
   clearScreen: logLevel === "silent",
+  resolve: {
+    dedupe: ["react", "react-dom", "react-router-dom"],
+    alias: [...baseAliases, ...monorepoAliases],
+  },
   server: {
     port,
     strictPort: true,
@@ -62,7 +75,5 @@ export default defineConfig({
   preview: {
     port,
   },
-  resolve: {
-    alias: [...baseAliases, ...monorepoAliases],
-  },
+  
 });
