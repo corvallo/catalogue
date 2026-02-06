@@ -1,5 +1,11 @@
 # @catalogue-lab/catalogue
 
+## 0.0.4
+
+### Patch Changes
+
+- fix release pipeline
+
 ## 0.0.3
 
 ### Patch Changes
