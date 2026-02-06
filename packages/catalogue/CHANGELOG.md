@@ -1,5 +1,11 @@
 # @catalogue-lab/catalogue
 
+## 0.0.6
+
+### Patch Changes
+
+- patch release
+
 ## 0.0.5
 
 ### Patch Changes
