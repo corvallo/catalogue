@@ -31,7 +31,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Install
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile --filter '!@catalogue-lab/example-app'
 
       - name: Build
         run: pnpm turbo build --filter=!@catalogue-lab/example-app
