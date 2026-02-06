@@ -1,5 +1,11 @@
 # @catalogue-lab/catalogue
 
+## 0.0.2
+
+### Patch Changes
+
+- fix npm installation
+
 ## 0.0.1
 
 ### Patch Changes

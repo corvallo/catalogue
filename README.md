@@ -22,7 +22,7 @@ pnpm -C packages/indexer-generated build &&
 pnpm -C packages/indexer-vite build &&
 pnpm -C packages/renderer-react build &&
 pnpm -C packages/cli build &&
-pnpm -C packages/tools build &&
+pnpm -C packages/catalogue build &&
 pnpm -C packages/app build
 ```
 
