@@ -28,7 +28,7 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@catalogue-lab/catalogue':
-        specifier: 0.0.4
+        specifier: 0.0.5
         version: link:../../packages/catalogue
       '@types/react':
         specifier: ^19.0.0
@@ -130,6 +130,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      fast-glob:
+        specifier: ^3.3.2
+        version: 3.3.3
       lucide-react:
         specifier: ^0.474.0
         version: 0.474.0(react@19.2.4)
