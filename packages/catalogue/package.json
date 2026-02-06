@@ -1,6 +1,6 @@
 {
   "name": "@catalogue-lab/catalogue",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "repository": {
     "type": "git",
@@ -56,6 +56,7 @@
     "@catalogue-lab/indexer-vite": "0.0.0",
     "@catalogue-lab/renderer-react": "0.0.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "fast-glob": "^3.3.2",
     "chokidar": "^4.0.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",

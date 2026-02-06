@@ -1,5 +1,11 @@
 # @catalogue-lab/catalogue
 
+## 0.0.5
+
+### Patch Changes
+
+- include fast-glob in bundled dependencies
+
 ## 0.0.4
 
 ### Patch Changes
